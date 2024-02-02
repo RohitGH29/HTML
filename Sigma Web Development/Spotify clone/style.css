@@ -1,0 +1,107 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: black;
+  color: white;
+}
+
+
+.left{
+    padding: 10px;
+    width: 25vmax;
+}
+
+.right{
+    width: 75vmax;
+    margin: 16px 0;
+}
+
+
+
+.home ul li{
+    width: 14px;
+    gap: 12px;
+    list-style: none;
+    display: flex;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading{
+    width: 100%;
+    gap: 12px;
+    padding: 23px 14px ;
+    display: flex;
+    padding-top: 14px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.heading img{
+    width: 30px;
+}
+
+.footer{
+    display: flex;
+    font-size: 7px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+
+.footer a{
+    color: gray;
+}
+
+
+
+.library{
+    min-height: 72vh;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(35, 35, 35);
+}
+
+.header > *{
+    padding: 20px;
+    
+}
+
+.spotifyPlaylist{
+    padding: 10px;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+}
+
+.card > * {
+    padding-top: 8px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
