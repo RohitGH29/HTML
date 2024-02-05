@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Form Example</title>
+</head>
+<body>
+
+<script>
+  // Create a form element
+  var myForm = document.createElement("form");
+  myForm.action = "/submit"; // Set the form action
+  myForm.method = "post";    // Set the form method
+
+  // Create a text box
+  var textBox = document.createElement("input");
+  textBox.type = "text";
+  textBox.name = "username";
+  textBox.placeholder = "Enter your username";
+
+  // Create a submit button
+  var submitButton = document.createElement("button");
+  submitButton.type = "submit";
+  submitButton.innerHTML = "Submit Form";
+
+  // Append elements to the form
+  myForm.appendChild(textBox);
+  myForm.appendChild(submitButton);
+
+  // Append the form to the document body
+  document.body.appendChild(myForm);
+
+  // Add event listener for form submission
+  myForm.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    alert("Form submitted! Username: " + textBox.value);
+  });
+</script>
+
+</body>
+</html>
